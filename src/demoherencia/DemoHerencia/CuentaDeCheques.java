@@ -34,7 +34,7 @@ public class CuentaDeCheques {
             this.saldo = saldo + cantidad;
         }
         else {
-            System.out.println("No se puede hacer el deposito.");
+            System.out.println("No se puedo depositar.");
         }
     }
     
@@ -48,7 +48,7 @@ public class CuentaDeCheques {
         }
         else {
             System.out.println
-                ("No se puede hacer el retiro, se le va cobrar $100.");
+                ("No se puedo retirar, se le cobrara $100.");
             this.saldo = saldo -100;
         }
     }

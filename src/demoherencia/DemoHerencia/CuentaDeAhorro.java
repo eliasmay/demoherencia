@@ -38,7 +38,7 @@ public class CuentaDeAhorro {
             this.saldo = saldo + cantidad;
         }
         else {
-            System.out.println("No se puede hacer el deposito.");
+            System.out.println("No se puedo depositar.");
         }
     }
     
@@ -47,7 +47,7 @@ public class CuentaDeAhorro {
             this.saldo = saldo - cantidad;
         }
         else {
-            System.out.println("No se puede hacer el retiro.");
+            System.out.println("No se puedo retirar.");
         }
     }
     

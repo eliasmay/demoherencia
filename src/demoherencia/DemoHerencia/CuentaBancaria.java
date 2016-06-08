@@ -11,10 +11,10 @@ package demoherencia.DemoHerencia;
  */
 public class CuentaBancaria {
     private int numeroDeCuenta;
-    private String cliente;
+    private Cliente cliente;
     private double saldo;
     
-    public CuentaBancaria (int numeroDeCuenta, String cliente){
+    public CuentaBancaria (int numeroDeCuenta, Cliente cliente){
         this.cliente = cliente;
         this.numeroDeCuenta = numeroDeCuenta;
         this.saldo =0.0;
@@ -22,17 +22,13 @@ public class CuentaBancaria {
     private void NumeroDeCuenta(int numeroDeCuenta){
         this.numeroDeCuenta = numeroDeCuenta;
     }
-    
-    private void Cliente(String cliente){
-        this.cliente = cliente;
-    }
-    
+
     public void Depositar(double cantidad){
         if (this.puedeDepositar(cantidad)){
             this.saldo = saldo + cantidad;
         }
         else {
-            System.out.println("No se puede hacer el deposito.");
+            System.out.println("No se puedo depositar.");
         }
     }
     
@@ -41,7 +37,7 @@ public class CuentaBancaria {
             this.saldo = saldo - cantidad;
         }
         else {
-            System.out.println("No se puede hacer el retiro.");
+            System.out.println("No se puedo retirar.");
         }
     }
     
